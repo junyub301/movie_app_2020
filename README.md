@@ -15,6 +15,15 @@ npm install prop-types
 yarn add prop-types
 ```
 
+gh-pages
+```shell
+#npm
+npm install gh-pages
+
+#yarn
+yarn add gh-pages
+```
+
 ## Component Lifecycle
 - Mounting
   - constructor() : component가 mount 되기 전 호출, 매서드 바인딩이나 state 초기화하는 작업이 없으면 구현하지 않아도된다.
@@ -46,5 +55,14 @@ Test.prototype = {
 ...
 
 ```
+
+## gh-pages 사용법
+1. 설치 
+2. package.json에 homepage 추가, projectName은 소문자로 사용
+  - "homepage": "https://{github userNmae}.github.io./{projectName}"
+3. package.json에 deply 스크립트 추가
+  - "deploy": "gh-pages -d build",
+  - "predeploy": "npm run build"
+4. npm run deploy 실행
 
 
