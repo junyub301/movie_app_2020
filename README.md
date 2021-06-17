@@ -59,10 +59,10 @@ Test.prototype = {
 ## gh-pages 사용법
 1. 설치 
 2. package.json에 homepage 추가, projectName은 소문자로 사용
-  - "homepage": "https://{github userNmae}.github.io./{projectName}"
+    - "homepage": "https://{github userNmae}.github.io./{projectName}"
 3. package.json에 deply 스크립트 추가
-  - "deploy": "gh-pages -d build",
-  - "predeploy": "npm run build"
+    - "deploy": "gh-pages -d build",
+    - "predeploy": "npm run build"
 4. npm run deploy 실행
 
 
